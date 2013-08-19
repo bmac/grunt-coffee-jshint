@@ -1,0 +1,45 @@
+{
+  "name": "grunt-coffee-jshint",
+  "description": "grunt wrapper for coffee-jshint",
+  "version": "0.1.1",
+  "homepage": "https://github.com/bmac/grunt-coffee-jshint",
+  "author": {
+    "name": "bmac",
+    "email": "bmac325@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bmac/grunt-coffee-jshint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmac/grunt-coffee-jshint/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bmac/grunt-coffee-jshint/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "coffee-jshint": "0.0.6"
+  }
+}
