@@ -19,6 +19,8 @@ module.exports = function(grunt) {
     grunt.registerMultiTask('coffee_jshint', 'grunt wrapper for coffee-jshint', function() {
         // Merge task-specific and/or target-specific options with these defaults.
         var options = this.options({
+            jshintOptions: [],
+            withDefaults: true,
             globals: []
         });
         var files = this.filesSrc;
@@ -37,8 +39,8 @@ module.exports = function(grunt) {
     var hintFile = function(path, options) {
 
         var errors = hintFiles([path],
-                               {options: [],
-                                withDefaults: true,
+                               {options: options.jshintOptions,
+                                withDefaults: options.withDefaults,
                                 globals: options.globals},
                                false);
         var flattened_errors = [].concat.apply([], errors);
