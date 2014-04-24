@@ -40,6 +40,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "coffee-jshint": "0.0.6"
+    "coffee-jshint": "0.0.14"
   }
 }
