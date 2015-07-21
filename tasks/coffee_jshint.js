@@ -27,10 +27,11 @@ module.exports = function(grunt) {
 
         var errors = files.map(function(path) {
             return hintFile(path, options);
+        }).filter( function(file_errors) {
+            return file_errors !== ''
         });
-         
-        var hasErrors = (/:/.test('\n' + errors.join('\n\n') + '\n'));
-        if (hasErrors) {
+
+        if (errors.length) {
             grunt.fail.warn('\n' + errors.join('\n\n') + '\n');
         }
 
