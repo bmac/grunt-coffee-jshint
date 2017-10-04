@@ -1,7 +1,7 @@
 {
   "name": "grunt-coffee-jshint",
   "description": "grunt wrapper for coffee-jshint",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/bmac/grunt-coffee-jshint",
   "author": {
     "name": "bmac",
