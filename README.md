@@ -32,7 +32,7 @@ grunt.initConfig({
       // Target-specific file lists and/or options go here.
     },
   },
-})
+});
 ```
 
 ### Options
@@ -60,16 +60,95 @@ A list of all globals in the project.
 ### Usage Examples
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+
+In this example, some `globals` and `jshintOptions` are defined at the task level `options`, sometimes to be specifically relpaced with target level
+definitions.  For more information on what they do, please see JSHint's [Enforcing options](http://jshint.com/docs/options/#enforcing-options), [Relaxing
+options](http://jshint.com/docs/options/#relaxing-options) and [Environments](http://jshint.com/docs/options/#environments). The latter group let `JSHint`
+know about some pre-defined global variables so that you don't have to explicitly include them into `globals`.
 
 ```js
 grunt.initConfig({
   coffee_jshint: {
+
     options: {
-      globals: ['console']
+
+      globals: [
+
+        'define',
+        'IntersectionObserver',
+        'Symbol'
+      ],
+
+      jshintOptions: [
+
+        //  Environments:
+        //
+        'browserify'
+        'browser'
+        'devel'
+
+        //  Enforcing options:
+        //
+        'eqeqeq',
+        'forin',
+        'noarg',
+        'nonew',
+        'undef',
+        'unused',
+
+        //  Relaxing options:
+        //
+        'debug',
+        'loopfunc'
+      ]
     },
-  },
-})
+
+    app: {
+      files: [ ... ]
+    },
+
+    gruntfile: {
+
+      options: {
+
+        globals: [],
+
+        jshintOptions: [
+
+          //  Environments:
+          //
+          'node'
+        ]
+      },
+
+      files: [ ... ]
+    },
+
+    test: {
+
+      options: {
+
+        jshintOptions: [
+
+          //  Environments:
+          //
+          'jasmine',
+          'node'
+
+          //  Enforcing options:
+          //
+          //... likely copied from task level `options.jshintOptions`
+
+          //  Relaxing options:
+          //
+          //... likely copied from task level `options.jshintOptions`
+        ]
+      }
+
+      files: [ ... ]
+    }
+  }
+});
 ```
 
 ## Contributing
