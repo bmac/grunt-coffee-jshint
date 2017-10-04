@@ -37,25 +37,34 @@ grunt.initConfig({
 
 ### Options
 
-#### options.jshintOptions
+#### `options.jshintOptions`
 Type: `Array`
 Default value: `[]`
 
-A list of options for coffee-jshint.
-For more informations, please see coffee-jshint's [Options](https://github.com/marviq/coffee-jshint#options)
+A list of JSHint options to pass on as the `coffee-jshint --options option1,option2,option3,etc,...` argument.
 
-#### options.withDefaults
+For more information about these, please see [JSHint's options](http://jshint.com/docs/options).
+
+#### `options.withDefaults`
 Type: `Boolean`
 Default value: `true`
 
 If you want to turn off the default options for coffee-jshint, change this flag to `false`.
-For more informations, please see coffee-jshint's [Options](https://github.com/marviq/coffee-jshint#options)
 
-#### options.globals
+This is the equivalent of doing `coffee-jshint --default-options-off`.
+
+For a list of coffee-jshint's defaults, please see its [options](https://github.com/marviq/coffee-jshint#options).
+
+#### `options.globals`
 Type: `Array`
 Default value: `[]`
 
 A list of all globals in the project.
+
+This option is passed on as the `coffee-jshint --globals global1,global2,etc,...` argument.
+
+See also [coffee-jshint's globals](https://github.com/marviq/coffee-jshint#globals).
+
 
 ### Usage Examples
 
