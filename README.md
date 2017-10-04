@@ -262,3 +262,7 @@ git push --follow-tags --all
 
 See [CHANGELOG](./CHANGELOG.md).
 
+
+## License
+
+[MIT](LICENSE)
