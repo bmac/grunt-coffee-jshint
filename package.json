@@ -14,23 +14,21 @@
   "bugs": {
     "url": "https://github.com/bmac/grunt-coffee-jshint/issues"
   },
-  "license": "MIT",
-  "main": "Gruntfile.js",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {
     "coffee-jshint": "^1.0.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.0",
+    "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.1"
+    "standard-version": "^4.2.0"
   },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT",
+  "main": "Gruntfile.js",
   "keywords": [
     "coffee-script",
     "coffeescript",
@@ -39,5 +37,9 @@
   ],
   "peerDependencies": {
     "grunt": ">=0.4.0"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "test": "grunt test"
   }
 }
