@@ -77,7 +77,7 @@ See also [coffee-jshint's globals](https://github.com/marviq/coffee-jshint#globa
 
 #### Custom Options
 
-In this example, some `globals` and `jshintOptions` are defined at the task level `options`, sometimes to be specifically relpaced with target level
+In this example, some `globals` and `jshintOptions` are defined at the task level `options`, sometimes to be specifically replaced with target level
 definitions.  For more information on what they do, please see JSHint's [Enforcing options](http://jshint.com/docs/options/#enforcing-options), [Relaxing
 options](http://jshint.com/docs/options/#relaxing-options) and [Environments](http://jshint.com/docs/options/#environments). The latter group let `JSHint`
 know about some pre-defined global variables so that you don't have to explicitly include them into `globals`.
