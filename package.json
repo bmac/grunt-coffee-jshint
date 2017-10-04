@@ -22,14 +22,14 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "coffee-jshint": "^1.0.0"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt": "~0.4.1"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
   },
   "keywords": [
     "coffee-script",
@@ -37,7 +37,7 @@
     "gruntplugin",
     "jshint"
   ],
-  "dependencies": {
-    "coffee-jshint": "^0.2.3"
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
   }
 }

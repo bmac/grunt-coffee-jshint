@@ -2,6 +2,10 @@
 
 > grunt wrapper for coffee-jshint
 
+**NOTE: As of version `2.0.0`, `grunt-coffee-jshint` depends (through `coffee-jshint`) on [`coffeescript`](https://www.npmjs.com/package/coffeescript) in
+favor of the, now deprecated, [`coffee-script`](https://www.npmjs.com/package/coffee-script) name.**
+
+
 ## Getting Started
 This plugin requires Grunt `>=0.4.1`
 
