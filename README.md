@@ -1,6 +1,9 @@
 # grunt-coffee-jshint
 
-> grunt wrapper for coffee-jshint
+[![npm version](https://badge.fury.io/js/grunt-coffee-jshint.svg)](https://badge.fury.io/js/grunt-coffee-jshint)
+[![David dependency drift detection](https://david-dm.org/bmac/grunt-coffee-jshint.svg)](https://david-dm.org/bmac/grunt-coffee-jshint)
+
+> Grunt wrapper for coffee-jshint
 
 **NOTE: As of version `2.0.0`, `grunt-coffee-jshint` depends (through `coffee-jshint`) on [`coffeescript`](https://www.npmjs.com/package/coffeescript) in
 favor of the, now deprecated, [`coffee-script`](https://www.npmjs.com/package/coffee-script) name.**
