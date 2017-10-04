@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         var errors = files.map(function(path) {
             return hintFile(path, options);
         }).filter( function(file_errors) {
-            return file_errors !== ''
+            return file_errors !== '';
         });
 
         if (errors.length) {
