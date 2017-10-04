@@ -42,14 +42,14 @@ Type: `Array`
 Default value: `[]`
 
 A list of options for coffee-jshint.
-For more informations, please see coffee-jshint's [Options](https://github.com/Clever/coffee-jshint#options)
+For more informations, please see coffee-jshint's [Options](https://github.com/marviq/coffee-jshint#options)
 
 #### options.withDefaults
 Type: `Boolean`
 Default value: `true`
 
 If you want to turn off the default options for coffee-jshint, change this flag to `false`.
-For more informations, please see coffee-jshint's [Options](https://github.com/Clever/coffee-jshint#options)
+For more informations, please see coffee-jshint's [Options](https://github.com/marviq/coffee-jshint#options)
 
 #### options.globals
 Type: `Array`
